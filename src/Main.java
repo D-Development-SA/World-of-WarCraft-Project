@@ -4,15 +4,37 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        init();
+        exercise1_1();
+        exercise1_2();
     }
 
-    public static void init() throws InterruptedException {
+    public static void exercise1_1() throws InterruptedException {
         welcome();
         waiting();
         subsectionAAndB();
         waiting();
         subSectionC();
+    }
+
+    public static void exercise1_2(){
+        World_of_Warcraft world = new World_of_Warcraft();
+
+        //world.moreHordesAlliance();
+        //world.PersonageLessVictory();
+        //world.quantityPersonagesByBreed();
+        //world.winnerDuel();
+    }
+
+    private static void welcome() {
+        println(" ___________________________________________________________________________________________________");
+        println("|                                                                                                   |");
+        println("|  0   0  OOO  0000  0     0000     OOO  0000   0   0    0   0000    0000  0000     0   0000  00000 |");
+        println("|  0 0 0 O   O 0   0 0     0   0   O   O 0      0   0   0 0  0   0  0      0   0   0 0  0       0   |");
+        println("|  0 0 0 O   O 0000  0     0   0   O   O 000    0 0 0  00000 0000   0      0000   00000 000     0   |");
+        println("|  0 0 0 O   O 0 0   0     0   0   O   O 0      0 0 0  0   0 0 0    0      0 0    0   0 0       0   |");
+        println("|   0 0   OOO  0  00 0000  0000     OOO  0       0 0   0   0 0  00   0000  0  00  0   0 0       0   |");
+        println("|                                                                                                   |");
+        println(" ---------------------------------------------------------------------------------------------------");
     }
 
     private static void subsectionAAndB() {
@@ -41,18 +63,6 @@ public class Main {
     private static void subSectionC(){
         println("\043[0;34m" + "\nElaborando inciso c ..... \n" + "\033[0m");
         println(new Personage("Durotán", 'O', 125, 145, 58).toString());
-    }
-
-    private static void welcome() {
-        println(" ___________________________________________________________________________________________________");
-        println("|                                                                                                   |");
-        println("|  0   0  OOO  0000  0     0000     OOO  0000   0   0    0   0000    0000  0000     0   0000  00000 |");
-        println("|  0 0 0 O   O 0   0 0     0   0   O   O 0      0   0   0 0  0   0  0      0   0   0 0  0       0   |");
-        println("|  0 0 0 O   O 0000  0     0   0   O   O 000    0 0 0  00000 0000   0      0000   00000 000     0   |");
-        println("|  0 0 0 O   O 0 0   0     0   0   O   O 0      0 0 0  0   0 0 0    0      0 0    0   0 0       0   |");
-        println("|   0 0   OOO  0  00 0000  0000     OOO  0       0 0   0   0 0  00   0000  0  00  0   0 0       0   |");
-        println("|                                                                                                   |");
-        println(" ---------------------------------------------------------------------------------------------------");
     }
 
     private static void println(String text) {
